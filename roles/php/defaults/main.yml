@@ -1,0 +1,15 @@
+---
+
+ php_packages:
+  - php
+  - php-common
+  - php-intl
+  - php
+  - php-mysqlnd
+  - php-json
+  - php-opcache
+  - php-mbstring
+  - php-xml
+  - php-gd
+  - php-curl
+ nginx: nginx

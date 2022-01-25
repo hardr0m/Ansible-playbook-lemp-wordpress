@@ -1,0 +1,8 @@
+---
+
+- name: 'INSTALL | install wordpress'
+  import_tasks: "install.yml"
+
+- name: 'CONFIG| config nginx'
+  import_tasks: "config.yml"
+

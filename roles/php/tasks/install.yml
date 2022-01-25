@@ -1,0 +1,7 @@
+---
+- name: Install php packages
+  block:
+    - name:
+      yum:
+        name: "{{ php_packages }}"
+        state: present

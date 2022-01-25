@@ -1,0 +1,17 @@
+---
+
+- name: Config php
+  block:
+    - name: Put correct php.ini
+      template:
+        src: templates/php.ini.j2
+        dest: /etc/php.ini
+#      become: yes
+
+    - name: Put correct www.conf
+      template:
+        src: templates/www.conf.j2
+        dest: /etc/php.d/www.conf
+      notify:
+        - reload php
+#      become: yes

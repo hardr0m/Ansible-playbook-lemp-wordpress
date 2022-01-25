@@ -1,0 +1,9 @@
+---
+
+- hosts: appservers
+  roles:
+    - epel
+    - nginx
+    - php
+    - mysql
+    - wordpress

@@ -1,0 +1,7 @@
+---
+
+- name: 'INSTALL | install php'
+  import_tasks: "install.yml"
+
+- name: 'CONFIG | config php'
+  import_tasks: "config.yml"

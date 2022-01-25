@@ -1,0 +1,15 @@
+---
+
+- name: Install install nginx
+  block:
+    - name: install nginx
+      yum:
+        name: nginx
+        state: present
+        update_cache: yes
+    - name: reload nginx
+      systemd:
+        name: nginx
+        daemon_reload: yes
+        state: reloaded
+        enabled: yes
